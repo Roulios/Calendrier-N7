@@ -14,18 +14,9 @@ body{
     display : flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    row-gap: 2rem;
-
+    
     font-family: roboto;
-}
-
-.how{
-    border :solid 0.1rem gray;
-    padding: 1.5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    border-radius: 2em;
+    background-color: rgb(240, 240, 240);
 }
 
 h1{
@@ -33,7 +24,41 @@ h1{
 
 }
 
+.menu{
+    display: flex;
+    flex-direction: column;
 
+    margin:2rem;
+    row-gap: 1rem;
+    margin-bottom:4rem;
+}
+
+.card{
+    background-color: white;
+
+    border :solid 0.1rem gray;
+    padding: 0.75em;
+    padding-left: 3em;
+    padding-right: 9em;
+    border-radius: 2.5em;
+
+    /*width: 30rem;*/
+}
+
+.contact{
+    background-color: white;
+    min-width: 100%;
+    height : rem;
+
+    border-top : solid rgb(97, 97, 97);
+
+}
+
+.contact h2{
+    margin:0.5em;
+    margin-left:0.75em;
+    font-size:1.2em;
+}
 
 
 .loading.hidden {
