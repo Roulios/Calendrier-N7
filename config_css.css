@@ -8,10 +8,15 @@ header{
 }
 
 h1{
-    color: white;
-    margin-left:0.75em;
-    font-size: 1.6em;
+  color: white;
+  margin-left:0.75em;
+  font-size: 1.6em;
 }
+
+h2{
+  font-size:1rem;
+}
+
 a{
   text-decoration:none;
   font-weight: bold;
@@ -21,12 +26,17 @@ a:visited{
   color:#3366CC;
 }
 
+a:hover{
+  text-decoration:underline;
+}
+
 #logo{
   height:4rem;
   margin-left: auto;
   margin-right: 0.8rem;
   
 }
+
 
 
 body{
@@ -38,7 +48,7 @@ body{
   align-items: center;
 
   font-family: 'Open Sans', sans-serif;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(245, 245, 245);
 }
 /*config du premier menu*/
 #menuSearch{
@@ -53,7 +63,16 @@ body{
 #searchBar{
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 0.5em;
+}
+
+#identifiant{
+  border-radius:0.5rem;
+  border: solid 0.1rem grey;
+
+  padding:0.2rem;
+  padding-left:0.3rem;
 }
 
 button{
@@ -69,9 +88,9 @@ button:hover{
 .menu{
   display: flex;
   flex-direction: column;
-  margin:2rem;
+  margin:4rem;
 
-  row-gap: 1rem;
+  row-gap: 1.3rem;
   margin-bottom:4rem;
 }
 
@@ -82,14 +101,26 @@ button:hover{
   background-color: white;
 
   border :solid 0.1rem gray; 
+  border-radius: 2.5em;
 
   padding: 0.75em;
   padding-left: 3em;
   padding-right: 3em;
-  border-radius: 2.5em;
   max-width: 20em;
 
+  box-shadow: 0.4rem 0.4rem 1rem rgb(177, 177, 177);
+
   
+}
+.introTuto{
+  display:flex;
+  align-items:center;
+  gap: 1.2rem;
+}
+
+.calendrierLogo{
+  width: 2rem;
+  height: 2rem;
 }
 
 .bottom{
