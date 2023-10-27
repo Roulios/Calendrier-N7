@@ -30,11 +30,16 @@ a:hover{
   text-decoration:underline;
 }
 
-#logo{
+#logoMobile{
   height:4rem;
   margin-left: auto;
   margin-right: 0.8rem;
-  
+}
+
+#logoPC{
+  height:3.6rem;
+  margin-left: auto;
+  margin-right: 0.8rem;
 }
 
 
@@ -161,27 +166,40 @@ ul{
 
 .loading.hidden {
     display: none;
-  }
-  .loading:not(.hidden) + #url {
-    display: none;
-  }
-  .loading {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  .loading svg {
-    animation: spin 1s linear infinite;
-    height: 1.75em;
-    width: 1.75em;
+}
+.loading:not(.hidden) + #url {
+  display: none;
+}
+.loading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.loading svg {
+  animation: spin 1s linear infinite;
+  height: 1.75em;
+  width: 1.75em;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
 
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-
-    to {
-      transform: rotate(1turn);
-    }
+  to {
+    transform: rotate(1turn);
   }
+}
+
+@media (max-width:500px){
+  #logoPC{
+    display:none;
+  }
+
+}
+
+@media (min-width:500px){
+  #logoMobile{
+    display:none;
+  }
+}
