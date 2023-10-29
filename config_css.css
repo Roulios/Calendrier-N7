@@ -32,10 +32,11 @@ p{
 a{
   text-decoration:none;
   font-weight: bold;
+  color: #2E55C1;
 }
 
 a:visited{
-  color:#3366CC;
+  color: #2E55C1;
 }
 
 a:hover{
@@ -63,7 +64,7 @@ body{
   flex-direction: column;
   align-items: center;
 
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   background-color: rgb(245, 245, 245);
 }
 /*config du premier menu*/
@@ -81,15 +82,22 @@ body{
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1.5em;
+  gap: 1rem;
 }
+
 
 #identifiant{
   border-radius:0.5rem;
-  border: solid 0.1rem rgb(39, 39, 39);
+  border: solid 0.1rem rgb(100, 100, 100);
 
   padding:0.2rem;
   padding-left:0.3rem;
+}
+
+#identifiant:focus{
+  border-color:rgb(39, 39, 39);
+  outline:0;
+
 }
 
 button{
@@ -99,18 +107,20 @@ button{
   background-color:white;
   
   border-radius:0.6rem;
-  border:solid 0.1rem rgb(39, 39, 39);
+  border:solid 0.1rem rgb(156, 163, 175);
 
   color: black;
-  font-weight: bold;
+  font-family: 'Space Grotesk', sans-serif;
 
   transition-property: background-color;
+  transition-property: border;
+  transition-property: color;
+
   transition-duration: 0.2s;
-  transition-delay: 0s;
 }
 
 button:hover{
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(156, 163, 175);
   cursor: pointer;
 }
 
@@ -119,7 +129,7 @@ button:hover{
   flex-direction: column;
   flex-grow:1;
 
-  margin-top:4rem;
+  margin-top:6rem;
   margin-bottom:6rem;
   row-gap: 1.7rem;
 }
@@ -135,12 +145,21 @@ button:hover{
 
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  padding: 0.75em;
-  padding-left: 2em;
+  padding: 1.2em;
+  padding-left: 1.5em;
+  padding-right: 2em;
   max-width: 20em;
 
   box-shadow: 0.4rem 0.4rem 1rem rgb(177, 177, 177); 
 }
+
+.how h2{
+  margin:0;
+  margin-bottom: 0.6rem;
+
+  padding:0;
+}
+
 .introTuto{
   display:flex;
   align-items:center;
@@ -223,20 +242,20 @@ ul{
 }
 
 .loading.hidden {
-    display: none;
+    display:none;
 }
 .loading:not(.hidden) + #url {
-  display: none;
+  display:none;
 }
 .loading {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 .loading svg {
-  animation: spin 1s linear infinite;
-  height: 1.75em;
-  width: 1.75em;
+  animation: spin 1.5s linear infinite;
+  height: 2.5rem;
+  width: 4rem;
 }
 
 @keyframes spin {
