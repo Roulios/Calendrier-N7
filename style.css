@@ -88,8 +88,7 @@ body{
 
 #identifiant{
   border-radius:0.5rem;
-  border: solid 0.1rem rgb(100, 100, 100);
-
+  border:solid 0.1rem rgb(156, 163, 175);
   padding:0.2rem;
   padding-left:0.3rem;
 }
