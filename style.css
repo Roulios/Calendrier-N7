@@ -221,17 +221,14 @@ button:hover{
 
 
 .bottom{
-  display:flex;
   
+  padding-top:1rem;
+  padding-bottom:1rem;
+
   background-color: white;
   min-width: 100%;
   border-top : solid rgb(97, 97, 97) 0.12rem;
 
-  padding-top:1rem;
-  padding-bottom:1rem;
-
-  justify-content: space-around;
-  align-items: center;
   margin-top:auto;
 }
 
@@ -240,9 +237,32 @@ button:hover{
   font-size:1.2em;
 }
 
+.bottomMenu{
+
+  display:flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+#credit p{
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  align-items: center;
+  justify-content: center;
+
+  color:rgb(97, 97, 97);
+}
+
 .contact{
   padding:0;
   margin:0;
+}
+
+.credit{
+  font-size: 1rem;
 }
 
 ul{
